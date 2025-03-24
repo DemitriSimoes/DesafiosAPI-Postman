@@ -1,7 +1,7 @@
 # DesafiosAPI-Postman
 Criando testes de API no Postman, exportando arquivos .json das "collections" e dos "environments".
 
-Os arquivos podem ser importandos para o Postman ou podem rodar executando o Newman,
+Os arquivos podem ser importados para o Postman ou podem rodar executando o Newman,
 utilizando o comando:
 newman run my-collection.json -e dev-environment.json
 
