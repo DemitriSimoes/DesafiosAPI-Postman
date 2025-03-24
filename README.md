@@ -1,6 +1,9 @@
 # DesafiosAPI-Postman
 Criando testes de API no Postman, exportando arquivos .json das "collections" e dos "environments".
 
+Utilizadas duas APIs, baixando e rodando uma localmente "api-clientes-exemplo-microservico" do VinnyPessoni
+e utilizando outra pública "{JSON} Placeholder".
+
 Os arquivos podem ser importados para o Postman ou podem rodar executando o Newman,
 utilizando o comando:
 newman run my-collection.json -e dev-environment.json
