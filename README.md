@@ -1,27 +1,27 @@
 # DesafiosAPI-Postman
-Criando testes de API no Postman, exportando arquivos .json das "collections" e dos "environments".
+Creating API tests in Postman, exporting .json files from "collections" and "environments".
 
-Utilizadas duas APIs, baixando e rodando uma localmente "api-clientes-exemplo-microservico" do VinnyPessoni
-e utilizando outra pública "{JSON} Placeholder".
+Used two APIs, downloading and running one locally "api-clientes-example-microservico" from VinnyPessoni
+and using another public "{JSON} Placeholder".
 
-Os arquivos podem ser importados para o Postman ou podem rodar executando o Newman,
-utilizando o comando:
+Files can be imported into Postman or run by running Newman,
+using the command:
 
 newman run my-collection.json -e dev-environment.json
 
 
-O arquivo "CTG.postman_collection.json" se relaciona com o ambiente "Local.postman_environment.json".
-Neste procedimento foi utilizado em um dos métodos GET (/risco/{id}) o uso de autenticação "Basic Auth", com username e password.
+The "CTG.postman_collection.json" file relates to the "Local.postman_environment.json" environment.
+In this procedure, one of the GET methods (/risco/{id}) used "Basic Auth" authentication, with username and password.
 
-Comando Newman:
+Newman Command:
 
 newman run CTG.postman_collection.json -e Local.postman_environment.json
 
 
-O arquivo "JSONPlaceHolder.postman_collection.json" se relaciona com o ambiente "JSONPlaceHolder.postman_environment.json".
-Neste procedimento foi utilizado o princípio de análise de valor limite no primeiro método GET (/post/{id}).
-Retornando para o limite inferior -1 e para o limite superir +1 "404", conforme o esperado.
+The "JSONPlaceHolder.postman_collection.json" file relates to the "JSONPlaceHolder.postman_environment.json" environment.
+In this procedure, the principle of limit value analysis was used in the first GET method (/post/{id}).
+Returning for the lower limit -1 and for the upper limit +1 "404", as expected.
 
-Comando Newman:
+Newman Command:
 
 newman run JSONPlaceHolder.postman_collection.json -e JSONPlaceHolder.postman_environment.json
